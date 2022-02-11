@@ -1,7 +1,8 @@
 const danhmucPage = {
     render() {
         return /*html*/ `
-        <div class="w-7/12 mt-12 m-auto ">
+        <div class="max-w-[100rem] mx-auto">
+        <div class="w-8/12 mt-12 m-auto ">
             <h1 class="text-3xl text-center font-semibold font-roboto">Dù bạn đang kinh doanh bất cứ ngành hàng nào, Onter đều hỗ trợ bạn xây dựng website kinh doanh, quản lý tập trung và marketing online một cách hiệu quả nhất.</h1>
             <div class="flex flex-wrap gap-7 justify-center mt-12">
                 <div>
@@ -106,6 +107,7 @@ const danhmucPage = {
                 </div>
 
             </div>
+        </div>
         </div>
         `
     }

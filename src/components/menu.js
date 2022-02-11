@@ -2,7 +2,7 @@ import SignIn from './signIn';
 const menuPage = {
     render() {
         return /*html*/ `
-            <div class="w-9/12 m-auto flex justify-content py-2">
+            <div class="max-w-[100rem] mx-auto flex justify-content py-2">
                 <div class="w-3/12">
                     <a class="font-semibold text-3xl uppercase font-icon" href=""><img class="w-20 inline" src="./favicon.png" alt=""><span class="text-orange-500">Bee </span>Design</a>
                 </div>

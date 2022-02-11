@@ -1,12 +1,12 @@
 const bannerPage = {
     render() {
         return /*html*/ `
-        <div class="w-screen bg-banner h-auto">
+        <div class="w-full bg-center mx-auto bg-banner h-auto bg-cover 2xl:max-w-[200rem]">
         <div class="flex justify-center">
 
             <div class="w-9/12 flex justify-between items-center py-52">
                 <div class="relavtive">
-                    <div>
+                    <div class="">
                         <div class="">
                             <h1 class="font-semibold font-roboto my-4 text-5xl">Dịch vụ thiết kế banner </h1>
                             <p class="font-roboto text-2xl my-2">Gian hàng đẹp mắt  </p>
