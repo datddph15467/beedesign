@@ -1,6 +1,6 @@
-import bannerPage from "../components/Pages/banner";
-import danhmucPage from "../components/Pages/danhmuc";
-import menuPage from "../components/Pages/menu";
+import bannerPage from "../components/banner";
+import danhmucPage from "../components/danhmuc";
+import menuPage from "../components/menu";
 const HomePage = {
     render() {
         return /* html */ `
