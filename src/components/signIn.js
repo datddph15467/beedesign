@@ -28,7 +28,6 @@ import { signin } from "./../api/user";
 //     }
 // };
 // export default Signin;
-
 const SignIn = {
     render() {
         return /*html*/ `
@@ -59,32 +58,32 @@ const SignIn = {
         `
     },
     afterRender() {
-
-        const btnSignIn = document.querySelector('#btnSignIn');
+        const btnSignIn = document.getElementById('btnSignIn');
         const model = document.querySelector('#login');
+        btnSignIn.addEventListener('click', () => {
+            console.log('a');
+        })
 
         function toggleModal() {
             model.classList.toggle('hidden')
         }
         btnSignIn.addEventListener('click', toggleModal);
 
-        function after() {
-            const formSignin = document.querySelector('#formSignin');
-            formSignin.addEventListener('submit', async(e) => {
-                e.preventDefault();
-                try {
-                    const data = await signin({
-                        email: document.querySelector('#email').value,
-                        password: document.querySelector('#password').value
-                    });
-                    console.log(data);
-                } catch (error) {
-                    console.log(error);
-                }
+        const formSignin = document.querySelector('#formSignin');
+        formSignin.addEventListener('submit', async(e) => {
+            e.preventDefault();
+            try {
+                const data = await signin({
+                    email: document.querySelector('#email').value,
+                    password: document.querySelector('#password').value
+                });
+                console.log(data);
+            } catch (error) {
+                console.log(error);
+            }
 
-            })
+        })
 
-        }
     }
 
 

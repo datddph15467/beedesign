@@ -14,7 +14,7 @@ const bannerPage = {
                         </div>
                         <div class="my-14">
                         <div class="my-8 absolute">
-                            <a href="" class="bg-orange-400 font-roboto px-36 py-5 rounded-3xl uppercase active:bg-orange-600 text-white text-xl font-semibold hover:bg-orange-500">
+                            <a href="" class="bg-orange-400 no-underline font-roboto px-36 py-4 rounded-3xl uppercase active:bg-orange-600 text-white text-xl font-semibold hover:bg-orange-500">
                                 Đăng ký thiết kế
                             </a>
                         </div>

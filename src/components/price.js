@@ -1,7 +1,7 @@
 const priceProduct = {
     render() {
         return /*html*/ `
-        <div class="max-w-[100rem] mx-auto mt-10 mb-52">
+        <div class="max-w-[100rem] mx-auto mt-10 mb-32">
         <div class="m-auto">
             <div class="text-center">
                 <h1 class="text-4xl font-roboto font-bold text-orange-700">
@@ -74,7 +74,7 @@ const priceProduct = {
                     <div class="mt-2 text-orange-700 text-base text-center uppercase">
                         Giá gốc <span><del>500.000VNĐ</del></span>
                     </div>
-                    <div class="my-6 m-auto text-center">
+                    <div class="my-6 text-center">
                         <button class="w-56 h-9 uppercase text-orange-700 cursor-pointer border-2 border-orange-700 rounded-2xl
                         hover:bg-white hover:text-black
                         ">Đăng kí ngay</button>
@@ -144,7 +144,7 @@ const priceProduct = {
                     <div class="mt-2 text-orange-700 text-base text-center uppercase">
                         Giá gốc <span><del>500.000VNĐ</del></span>
                     </div>
-                    <div class="my-6 m-auto text-center">
+                    <div class="my-6 text-center">
                         <button class="w-56 h-9 uppercase text-orange-700 cursor-pointer border-2 border-orange-700 rounded-2xl
                         hover:bg-white hover:text-black
                         ">Đăng kí ngay</button>
@@ -214,7 +214,7 @@ const priceProduct = {
                     <div class="mt-2 text-orange-700 text-base text-center uppercase">
                         Giá gốc <span><del>500.000VNĐ</del></span>
                     </div>
-                    <div class="my-6 m-auto text-center">
+                    <div class="my-6 text-center">
                         <button class="w-56 h-9 uppercase text-orange-700 cursor-pointer border-2 border-orange-700 rounded-2xl
                         hover:bg-white hover:text-black
                         ">Đăng kí ngay</button>
@@ -284,7 +284,7 @@ const priceProduct = {
                     <div class="mt-2 text-orange-700 text-base text-center uppercase">
                         Giá gốc <span><del>500.000VNĐ</del></span>
                     </div>
-                    <div class="my-6 m-auto text-center">
+                    <div class="my-6 text-center">
                         <button class="w-56 h-9 uppercase text-orange-700 cursor-pointer border-2 border-orange-700 rounded-2xl
                         hover:bg-white hover:text-black
                         ">Đăng kí ngay</button>
