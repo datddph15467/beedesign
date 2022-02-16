@@ -1,7 +1,7 @@
 const khogiaodienPage = {
     render() {
         return /*html*/ `
-        <div class="max-w-[1140px] mt-5 m-auto bg-gradient-to-r to-green-500  from-transparent">
+        <div class="max-w-[1140px] pb-10 mt-5 m-auto bg-gradient-to-r to-green-500  from-transparent">
         <div class="h-[56px] m-auto text-center text-3xl font-bold font-roboto text-green-700">
             <p class="bg-bg bg-no-repeat pb-[43px] bg-[length:420px] bg-center text-center">
                 Mẫu giao diện nổi bật

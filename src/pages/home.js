@@ -2,6 +2,7 @@ import bannerPage from "../components/banner";
 import beePage from "../components/bee";
 import danhmucPage from "../components/danhmuc";
 import designPage from "../components/design";
+import fotterPage from "../components/fotter";
 import infoPage from "../components/info";
 import khogiaodienPage from "../components/khogiaodien";
 import menuPage from "../components/menu";
@@ -33,7 +34,10 @@ const HomePage = {
         </div>
         <div class="khogiaodienPage bg-gradient1" >
         ${khogiaodienPage.render()}
-        </div>
+        </div> 
+        <div class="fotterPage" >
+        ${fotterPage.render()}
+        </div> 
         </div>
         `;
     }
