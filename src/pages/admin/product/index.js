@@ -1,17 +1,18 @@
-import { getAll, remove } from "./../../../api/post";
+import NavAdmin from "../../../components/NavAdmin";
+import { getAll, remove } from "./../../../api/product";
 const AdminNewsPage = {
         async render() {
             const { data } = await getAll()
             return /* html */ `
         <div class="min-h-full">
-           
+        ${NavAdmin.render()}
             <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <!-- This example requires Tailwind CSS v2.0+ -->
                 <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="flex-1 min-w-0">
                     <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-                    Quản lý tin tức
+                    Quản lý Sản Phẩm
                     </h2>
                 </div>
                 <div class="mt-5 flex lg:mt-0 lg:ml-4">
@@ -29,25 +30,31 @@ const AdminNewsPage = {
             </div>
             </header>
             <main>
-            <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <div class="max-w-7xl text-center mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Replace with your content -->
-                <table>
+                <table class="w-full" border="1">
                     <thead>
                     <tr>
                         <th>STT</th>
+                        <th>Tên sản phẩm</th>
                         <th>Image</th>
-                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Danh mục</th>
+                        <th>Lượt xem</th>
                         <th></th>
                     </tr>
                     <tbody>
-                        ${data.map((post, index) => `
+                        ${data.map((product, index) => `
                         <tr>
                             <td>${index + 1}</td>
-                            <td><img src="${post.img}"  width="50"/></td>
-                            <td>${post.title}</td>
+                            <td>${product.name}</td>
+                            <td class="flex justify-center"><img src="${product.img}"  width="50"/></td>
+                            <td>${product.title}</td>
+                            <td>${product.title}</td>
+                            <td>${product.view}</td>
                             <td>
-                                <a href="/admin/products/${post.id}/edit">Edit</a>
-                                <button data-id="${post.id}" class="btn btn-remove">Remove</button>
+                                <a href="/admin/products/${product.id}/edit">Edit</a>
+                                <button data-id="${product.id}" class="btn btn-remove">Remove</button>
                             </td>
                         </tr>
                         `).join("")}

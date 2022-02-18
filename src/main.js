@@ -24,6 +24,7 @@ router.on({
         print(blogPage);
     },
     "/signin": () => print(Signin),
+
     "/admin/products": () => {
         print(AdminNewsPage);
     },

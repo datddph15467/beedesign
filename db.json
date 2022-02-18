@@ -1,54 +1,66 @@
 {
-  "posts": [
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749856/wwedaratzgdne4b9bkwk.png",
-      "desc": "",
-      "id": 5
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749863/t1iq1rjfbmwarmap7yib.png",
-      "desc": "",
-      "id": 6
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749856/wwedaratzgdne4b9bkwk.png",
-      "desc": "",
-      "id": 7
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749863/t1iq1rjfbmwarmap7yib.png",
-      "desc": "",
-      "id": 8
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749856/wwedaratzgdne4b9bkwk.png",
-      "desc": "",
-      "id": 9
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749863/t1iq1rjfbmwarmap7yib.png",
-      "desc": "",
-      "id": 10
-    }
-  ],
-  "users": [
-    {
-      "email": "keninsta01@gmail.com",
-      "password": "$2a$10$LpnSkC5lEYiODNDBQYT7suO2i928rV4gDNMtYePybRv0.PjURdfsO",
-      "username": "datlt2306",
-      "id": 1
-    },
-    {
-      "email": "keninsta02@gmail.com",
-      "password": "$2a$10$dQTjGYR2yJXGqpWPfgnaNOBW0Ak0QxK1VX2IXVxRxUeA50oCu7W42",
-      "username": "datlt23061",
-      "id": 2
-    }
-  ]
+    "blog": [{
+            "title": "",
+            "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749856/wwedaratzgdne4b9bkwk.png",
+            "desc": "",
+            "id": 5
+        },
+        {
+            "title": "",
+            "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749863/t1iq1rjfbmwarmap7yib.png",
+            "desc": "",
+            "id": 6
+        },
+        {
+            "title": "",
+            "img": "http://res.cloudinary.com/bee-design/image/upload/v1644749856/wwedaratzgdne4b9bkwk.png",
+            "desc": "",
+            "id": 7
+        }
+    ],
+    "users": [{
+            "email": "keninsta01@gmail.com",
+            "password": "$2a$10$LpnSkC5lEYiODNDBQYT7suO2i928rV4gDNMtYePybRv0.PjURdfsO",
+            "username": "datlt2306",
+            "id": 1
+        },
+        {
+            "email": "keninsta02@gmail.com",
+            "password": "$2a$10$dQTjGYR2yJXGqpWPfgnaNOBW0Ak0QxK1VX2IXVxRxUeA50oCu7W42",
+            "username": "datlt23061",
+            "id": 2
+        },
+        {
+            "email": "keninsta01@gmail.com",
+            "password": "2",
+            "username": "datlt23062",
+            "id": 3
+        },
+        {
+            "email": "dat@gmail.com",
+            "password": "$2a$10$47qqmuVCuq6v.kLwn/01IehuoESfeqPWHwV722ku02WHem5lGsCw.",
+            "username": "dat123",
+            "id": 4
+        },
+        {
+            "email": "dat2@gmail.com",
+            "password": "$2a$10$imOl7qcKFxP1nII3yHYASO.vgGsGJH.xIB2e9ubWKbGOjKQoii/7a",
+            "username": "dat1232",
+            "id": 5
+        }
+    ],
+    "products": [{
+        "id": 1,
+        "name": "Banner 1",
+        "price": "299.000",
+        "view": "200",
+        "danhmuc": "nội thất"
+    }],
+    "carts": [{
+        "id": 1,
+        "name": "Banner 1",
+        "price": "299.000",
+        "view": "200",
+        "danhmuc": "nội thất"
+    }]
 }

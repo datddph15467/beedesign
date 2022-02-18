@@ -1,5 +1,5 @@
 import axios from "axios";
-import { add, get, update } from "../../../api/post";
+import { add, get, update } from "./../../../api/product";
 
 const AdminEditPost = {
     async render(id) {
@@ -41,12 +41,17 @@ const AdminEditPost = {
                         id="title-post"
                         value="${data.title}"
                         > <br />
-                    <input type="text" 
-                        class="border border-black" 
-                        placeholder="image "
-                        id="img-post"
-                        value="${data.img}"
-                        > <br />
+                        <div class="grid grid-cols-2 gap-8">
+                        <div>
+                          <input type="file" 
+                          class="border border-black" 
+                          id="img-post"
+                          > 
+                        </div>
+                        <div>
+                          <img src="${data.img}" id="imgPreview" />
+                        </div>
+                      </div>
                     <textarea name="" 
                             id="desc-post" 
                             cols="30" 

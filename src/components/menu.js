@@ -9,10 +9,10 @@ const menuPage = {
                 <div class="m-auto w-full h-0 flex justify-end">
                     <ul class="flex justify-end font-bold text-lg items-center">
                         <li class="py-2 px-3 text-black">
-                            <a after="" class="relative text-black no-underline hover:after:left-0 hover:after:right-0 after:contents-[attr(after)] after:absolute after:inset-x-0 after:left-1/2 after:transition-all after:ease-linear after:right-1/2
+                            <a
+                            after="" class="relative text-black no-underline hover:after:left-0 hover:after:right-0 after:contents-[attr(after)] after:absolute after:inset-x-0 after:left-1/2 after:transition-all after:ease-linear after:right-1/2
                             after:h-1 after:-bottom-2
                             after:bg-orange-300
-                            " href="">Bảng giá</a>
                         </li>
                         <li class="py-2 px-3 text-black">
                             <a after="" class="relative text-black no-underline hover:after:left-0 hover:after:right-0 after:contents-[attr(after)] after:absolute after:inset-x-0 after:left-1/2 after:transition-all after:ease-linear after:right-1/2
@@ -33,13 +33,10 @@ const menuPage = {
                             " href="">Blog</a>
                         </li>
                         <li class="py-2 px-3 text-black">
-                            <a after="" class="relative text-black no-underline hover:after:left-0 hover:after:right-0 after:contents-[attr(after)] after:absolute after:inset-x-0 after:left-1/2 after:transition-all after:ease-linear after:right-1/2
-                            after:h-1 after:-bottom-2
-                            after:bg-orange-300
-                            " href="">Đăng ký / Đăng nhập</a>
+                            ${SignIn.signIn()}
                         </li>
                         <li class=" px-5 text-black">
-                            ${SignIn.render()}
+                        <button class="bg-orange-400 px-7 py-3 rounded-3xl hover:bg-orange-500 font-roboto"><span class="text-white">Đăng ký thiết kế</span></button>
                         </li>
                     </ul>
                 </div>

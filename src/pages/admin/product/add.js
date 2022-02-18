@@ -1,16 +1,18 @@
 import axios from "axios";
-import { add } from "./../../../api/post";
+import { add } from "./../../../api/product";
+import NavAdmin from "../../../components/NavAdmin";
 const AdminAddNewsPage = {
     render() {
         return /* html */ `
         <div class="min-h-full">
+            ${NavAdmin.render()}
             <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <!-- This example requires Tailwind CSS v2.0+ -->
                 <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="flex-1 min-w-0">
                     <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
-                    Thêm mới bài viết
+                    Thêm mới sản phẩm
                     </h2>
                 </div>
                 <div class="mt-5 flex lg:mt-0 lg:ml-4">
@@ -31,22 +33,29 @@ const AdminAddNewsPage = {
             <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
                 <!-- Replace with your content -->
                 <form action="" id="form-add">
+                    <label>Tên sản phẩm</label>
                     <input type="text" 
                         class="border border-black" 
-                        placeholder="title post"
+                        placeholder="Tên sản phẩm"
                         id="title-post"
                         > <br />
+                    <label>Ảnh đại diện</label>
                     <input type="file" 
                         class="border border-black" 
                         id="img-post"
                         > <br />
-                    <textarea name="" 
+                        <div class="grid grid-cols-2 gap-8">
+                        <div>
+                        <img src="" id="imgPreview" />
+                      </div>
+                        </div>
+                    <textarea name="editor1" 
                             id="desc-post" 
                             cols="30" 
                             rows="10"
-                            class="border border-black"
+                            class="border border-black" placeholder="Nhập mô tả sản phẩm"
                             ></textarea><br />
-                    <button class="bg-blue-500 p-4 text-white">Thêm bài viết</button>
+                    <button class="bg-blue-500 p-4 text-white">Thêm Sản Phẩm</button>
                 </form>
                 <!-- /End replace -->
             </div>
@@ -55,8 +64,16 @@ const AdminAddNewsPage = {
         `;
     },
     afterRender() {
+        CKEDITOR.replace('editor1');
+
         const formAdd = document.querySelector("#form-add");
         const imgPost = document.querySelector("#img-post");
+        const imgPreview = document.querySelector('#imgPreview');
+
+        imgPost.addEventListener('change', (e) => {
+            // console.log(URL.createObjectURL(e.target.files[0]))
+            imgPreview.src = URL.createObjectURL(e.target.files[0])
+        })
 
         imgPost.addEventListener("change", async(e) => {
             const file = e.target.files[0];

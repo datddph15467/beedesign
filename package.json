@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "axios": "^0.25.0",
+        "ckeditor4": "^4.17.2",
         "json-server-auth": "^2.1.0",
         "navigo": "^8.11.1"
     }
